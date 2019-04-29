@@ -7,7 +7,7 @@
 #nano /etc/crontab
 #cat /etc/crontab
 # Edit /etc/crontab ,append this item.
-# 9 5    * * *   root    /root/upv2.sh
+# 8 4    * * *   root    /root/upv2.sh
 # than, system atuorun this shell script every day at 4:08
 
 #Check this script run ok or no?
