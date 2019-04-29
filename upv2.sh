@@ -9,6 +9,9 @@
 # Edit /etc/crontab ,append this item.
 # 8 4    * * *   root    /root/upv2.sh
 # than, system atuorun this shell script every day at 4:08
+# server time zero is UTC
+# Now My time zero is CST = UTC+8, UTC=CST-8,
+# if CST=4, then UTC=CST-8=4+24-8=20
 
 #Check this script run ok or no?
 # Just check system uptime equ  docerk container uptime or no?
