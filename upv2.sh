@@ -1,5 +1,7 @@
 # File name : upv2.sh
+# title: This script auto install and update v2ray server with docker methond 
 # data: 2019.4.28
+# 
 
 #---------------------
 # Help
@@ -17,6 +19,16 @@
 # Just check system uptime equ  docerk container uptime or no?
 # type command top,htop in command line for see system uptime
 # type docker ps -a in command line for see docker container uptime
+
+# see: 
+# https://www.v2ray.com/
+# https://toutyrater.github.io
+# https://toutyrater.github.io/app/docker-deploy-v2ray.html
+
+# https://www.v2ray.com/chapter_00/start.html
+# Notice everybody:
+# 1,please create your config.json file, 
+# 2,fixed port map. this script only for sample. 
 
 #---------------------
 #
