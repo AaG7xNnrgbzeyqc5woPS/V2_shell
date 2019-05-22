@@ -1,0 +1,25 @@
+install manjaro linux v2ray client
+Frist install v2ray from package manager. 
+
+//manjary  v2ray client has some bug
+// need add some data file
+$ v2ray -test -config ~/.v2ray/config.json
+
+$ cd /usr/bin
+$ sudo ln -s /etc/v2ray/geosite.dat geosite.dat
+$ sudo ln -s /etc/v2ray/geoip.dat geoip.dat
+
+$ v2ray -test -config ~/.v2ray/config.json
+Configuration OK.
+
+firefox addition "SwitchyOmegaα"
+profile name : wphone_v2ray_proxy
+socks5 127.0.0.1 1080
+
+
+
+ "port": 1080, // 监听端口
+v2ray -config ~/.v2ray/config.json
+
+ps -ef
+ps -ef | grep v2ray
