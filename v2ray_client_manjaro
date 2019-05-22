@@ -23,3 +23,5 @@ v2ray -config ~/.v2ray/config.json
 
 ps -ef
 ps -ef | grep v2ray
+
+#This method is Ok! 2019.5.22
