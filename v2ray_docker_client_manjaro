@@ -1,0 +1,59 @@
+1, install docker 
+sudo pacman -S docker
+2,
+Start Docker
+
+    sudo systemctl start docker
+
+Check Docker status
+
+    sudo systemctl status docker
+
+If docker is up and running, you will see the following status message:
+
+    ● docker.service - Docker Application Container Engine
+       Loaded: loaded (/usr/lib/systemd/system/docker.service; disabled; vendor pres
+       Active: active (running) since Sun 2016-12-25 16:54:17 WIB; 14s ago
+         Docs: https://docs.docker.com
+    Main PID: 2617 (dockerd)
+        Tasks: 17 (limit: 4915)
+       Memory: 15.8M
+          CPU: 424ms
+       CGroup: /system.slice/docker.service
+               ├─2617 /usr/bin/dockerd -H fd://
+               └─2638 docker-containerd -l unix:///var/run/docker/libcontainerd/dock
+
+To start docker on boot, use this command
+
+    sudo systemctl enable docker
+------------------------------------------------------------------------
+Step 3. Configure Docker user
+
+By default, only user with root or sudo privileges can run or manage Docker. If you want to run docker without root privileges or without having to add sudo everytime, do the following
+
+sudo usermod -aG docker $USER
+
+Then, reboot Manjaro. 
+-----------------------------------------------------------------
+
+
+v2ray client 
+docker run -d --name v2ray -v /home/john/.v2ray:/etc/v2ray -p 127.0.0.1:1080:1080     v2ray/official v2ray -config=/etc/v2ray/config_docker_client.json
+docker run -d --name v2ray -v /home/john/.v2ray:/etc/v2ray -p 127.0.0.1:1080:1080     v2ray/official v2ray -config=/etc/v2ray/config_docker_client.json
+
+run ok!
+good job !  now browse youtube.com
+fixed configfile list down:
+"inbound": {
+    "port": 1080, // 监听端口
+    "listen": "0.0.0.0",   //监听整个外部网络，因为docker 相当于一个虚拟机主机运行在 客户电脑内部
+    "protocol": "socks", // 入口协议为 SOCKS 5
+    "domainOverride": ["tls","http"],
+    "settings": {
+      "auth": "noauth",  //socks的认证设置，noauth 代表不认证，由于 socks 通常在客户端使用，所以这里不认证
+      "udp": false,
+      "ip": "0.0.0.0"
+    }
+  },
+
+
