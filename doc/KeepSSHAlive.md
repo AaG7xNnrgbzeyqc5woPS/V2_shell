@@ -1,11 +1,11 @@
-see:
-https://onekeyes.iteye.com/blog/2316533
-https://www.oschina.net/question/35243_168206
-http://www.ha97.com/4070.html
+# see:
+### https://onekeyes.iteye.com/blog/2316533
+### https://www.oschina.net/question/35243_168206
+### http://www.ha97.com/4070.html
 
-keyword: 保持SSH服务器长期链接
-Titile:
-（总结）Linux下设置SSH Server保持长时间连接
+# keyword: 保持SSH服务器长期链接
+# Titile:
+# Linux下设置SSH Server保持长时间连接
 
 怎样让服务器和一定时间没有任何操作的终端自动断开连接？ # vi /etc/profile 增加： TMOUT=1800 这样30分钟没操作就自动LOGOUT
 
