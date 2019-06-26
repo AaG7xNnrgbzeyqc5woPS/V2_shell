@@ -36,9 +36,9 @@ OpenSSH基于安全的理由，如果用户连线到SSH Server后闲置一段时
 如何让ssh连接服务器或者sshtunnel保持连接呢?
 
 　　其实也很方便,只要在/etc/ssh/ssh_config文件里加两个参数就行了
+>1 TCPKeepAlive yes
 
-　　>TCPKeepAlive yes
-　　>ServerAliveInterval 300
+>2 ServerAliveInterval 300
 
 　　前一个参数是说要保持连接,后一个参数表示每过5分钟发一个数据包到服务器表示"我还活着"
 
