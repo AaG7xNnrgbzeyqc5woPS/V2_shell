@@ -13,7 +13,7 @@
 
 OpenSSH基于安全的理由，如果用户连线到SSH Server后闲置一段时间，SSH Server会在超过特定时间后自动终止SSH连线。本人习惯长时间连接，需要做如下修改：
 
-1、打开ssh配置文件：# vim /etc/ssh/sshd_config
+## 1、打开ssh配置文件：# vim /etc/ssh/sshd_config
 加入如下两个参数保存就可以：
 
     TCPKeepAlive yes
@@ -21,17 +21,16 @@ OpenSSH基于安全的理由，如果用户连线到SSH Server后闲置一段时
 
 注：前一个参数表示要保持TCP连接，后一个参数表示客户端的SSH连线闲置多长时间后自动终止连线的数值，单位为分钟。
 
-2、重启sshd生效：
-
-   ~~/etc/init.d/sshd restart~~
-   上面的命令不能用，在ubuntu 19.04 Lts
-   *reboot 暂时代替*
+## 2、重启sshd生效：
+   >~~/etc/init.d/sshd restart~~
+   
+   上面的命令不能用，在ubuntu 19.04 Lts *reboot 暂时代替*
 
 注：此法适用于所有Linux发行版的OpenSSH
 
  
 
-ubuntu设置
+## ubuntu设置
 
 如何让ssh连接服务器或者sshtunnel保持连接呢?
 
