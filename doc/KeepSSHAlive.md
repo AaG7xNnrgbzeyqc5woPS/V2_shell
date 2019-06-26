@@ -24,7 +24,8 @@ OpenSSH基于安全的理由，如果用户连线到SSH Server后闲置一段时
 ## 2、重启sshd生效：
    >~~/etc/init.d/sshd restart~~
    
-   上面的命令不能用，在ubuntu 19.04 Lts *reboot 暂时代替*
+   上面的命令不能用，在ubuntu 19.04 Lts 
+   >*reboot 暂时代替*
 
 注：此法适用于所有Linux发行版的OpenSSH
 
