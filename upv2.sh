@@ -30,8 +30,14 @@
 # 1,please create your config.json file, 
 # 2,fixed port map. this script only for sample. 
 
-#---------------------
+#---------------------------------------------------------------------
+#use method:
+#---------------------------------------------------------------------
+# wget https://raw.githubusercontent.com/AaG7xNnrgbzeyqc5woPS/V2_shell/master/upv2.sh
 #
+
+#---------------------
+# main scription
 #-------------------
 
 echo ---1, Hello,Now upgrade GNU/Linux----
