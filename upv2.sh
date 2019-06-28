@@ -34,7 +34,23 @@
 #use method:
 #---------------------------------------------------------------------
 # wget https://raw.githubusercontent.com/AaG7xNnrgbzeyqc5woPS/V2_shell/master/upv2.sh
-#
+# ls -l
+# chmod +x upv2.sh
+# ls -l
+# ./upv2.sh
+# shutdown -c
+
+# install docker, 下面两个方法之一
+# 1, snap install docker     # version 18.06.1-ce, or
+# 2, apt  install docker.io  # version 18.09.5-0ubuntu1
+# 注释：在ubuntu命令行直接输入 docker 命令,如果没有安装 docker回有提示！
+# 下面三个命令检查 docker是否安装成功
+# docker --version
+# docker info
+# docker run library/hello-world
+# 这个难度更大的命令，进入容器内
+# docker run -it ubuntu bash
+
 
 #---------------------
 # main scription
