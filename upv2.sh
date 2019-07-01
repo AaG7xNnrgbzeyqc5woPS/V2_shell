@@ -70,11 +70,11 @@ apt-get dist-upgrade -y
 
 echo
 echo ---04 atuoremove---
-apt-get autoremove
+apt-get autoremove -y
 
 echo
 echo ---05 clean---
-apt-get clean
+apt-get clean -y
 
 echo
 echo
