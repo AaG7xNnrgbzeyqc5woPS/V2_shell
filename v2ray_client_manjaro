@@ -31,3 +31,12 @@ ps -ef | grep v2ray
 6）浏览器浏览youtuber 网站，确认一切都OK
 
 #This method is Ok! 2019.5.22
+
+
+-----------------------------------
+补充：
+通过 ps -ef | grep v2ray 命令可以看到
+/usr/bin/v2ray -config /etc/v2ray/config.json
+这是系统内的缺省配置，使用的配置文件为 /etc/v2ray/config.json
+已经是自启动了，自启动的配置已经忘记了如何配置了，以后再补充。
+ 
