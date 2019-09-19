@@ -1,7 +1,9 @@
+
+1) 安装本地客户端，具体的配置文件因为隐私原因没有提供
 install manjaro linux v2ray client
 Frist install v2ray from package manager. 
 
-//manjary  v2ray client has some bug
+// manjary  v2ray client has some bug
 // need add some data file
 $ v2ray -test -config ~/.v2ray/config.json
 
@@ -9,19 +11,23 @@ $ cd /usr/bin
 $ sudo ln -s /etc/v2ray/geosite.dat geosite.dat
 $ sudo ln -s /etc/v2ray/geoip.dat geoip.dat
 
+2）测试客户端
 $ v2ray -test -config ~/.v2ray/config.json
 Configuration OK.
 
+3）firefox插件安装和配置
 firefox addition "SwitchyOmegaα"
-profile name : wphone_v2ray_proxy
+profile name : v2ray_proxy
 socks5 127.0.0.1 1080
+"port": 1080, // 监听端口
 
-
-
- "port": 1080, // 监听端口
+4）运行v2ray客户端
 v2ray -config ~/.v2ray/config.json
 
+5）查看确认v2ray进程启动成功
 ps -ef
 ps -ef | grep v2ray
+
+6）浏览器浏览youtuber 网站，确认一切都OK
 
 #This method is Ok! 2019.5.22
