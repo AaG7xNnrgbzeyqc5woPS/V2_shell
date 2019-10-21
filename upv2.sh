@@ -104,12 +104,15 @@ echo
 echo ----- 24. docker run all v2ray
 
 # port map only for demo, please fix it for your mind.
-# please create three config file youself.
+# please create three config file yourself.
 docker run -d  --restart unless-stopped --name v2ray1 -v /etc/v2ray:/etc/v2ray  -p 2000:2000 v2ray/official  v2ray -config=/etc/v2ray/svr_config_1.json
 
 docker run -d  --restart unless-stopped --name v2ray2 -v /etc/v2ray:/etc/v2ray -p 2000:2000/udp v2ray/official  v2ray -config=/etc/v2ray/svr_config_2.json
 
 docker run -d  --restart unless-stopped --name v2ray3 -v /etc/v2ray:/etc/v2ray -p 2100:2100/udp v2ray/official  v2ray -config=/etc/v2ray/svr_config_3.json
+
+# if you want some log, please add other parametric:
+# -v /var/log/v2ray:/var/log/v2ray
 
 echo
 echo ---- 24. docker  containers list
