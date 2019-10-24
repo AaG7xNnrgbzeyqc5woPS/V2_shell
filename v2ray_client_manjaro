@@ -39,4 +39,20 @@ ps -ef | grep v2ray
 /usr/bin/v2ray -config /etc/v2ray/config.json
 这是系统内的缺省配置，使用的配置文件为 /etc/v2ray/config.json
 已经是自启动了，自启动的配置已经忘记了如何配置了，以后再补充。
+
+-------------------
+再补充：
+配置为服务，开机自启动
+sudo nano /etc/v2ray/config.json
+sudo systemctl status v2ray
+sudo systemctl enable v2ray
+
+更多systemd的控制说明见下面的链接：
+https://wiki.archlinux.org/index.php/systemd
+https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units
+https://www.linode.com/docs/quick-answers/linux-essentials/introduction-to-systemctl/
+
+
+
+
  
