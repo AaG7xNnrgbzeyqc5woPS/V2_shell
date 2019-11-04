@@ -56,4 +56,12 @@ fixed configfile list down:
     }
   },
 
+--------------------------
 
+addon: use mirror sources
+vi /etc/docker/daemon.json
+{
+    "registry-mirrors": ["https://registry.docker-cn.com"]
+}
+
+reboot
