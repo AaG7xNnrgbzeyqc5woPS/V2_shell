@@ -1,16 +1,21 @@
 --------------------------
-install docker
+# install docker
 
 snap install docker     # version 18.06.1-ce, or
 apt  install docker.io  # version 18.09.5-0ubuntu1
+sudo usermod -aG docker $(whoami)  # 授权当前用户访问docker服务
+reboot                             # 重启才能授权生效
+
 下面三个命令检查 docker是否安装成功
 docker --version
 docker info
 docker run library/hello-world
+
 这个难度更大的命令，进入容器内
 docker run -it ubuntu bash
 
--------------------
+----------------------------------
+
 常用命令
 
 除过以上我们使用的Docker命令外，Docker还有一些其它常用的命令
